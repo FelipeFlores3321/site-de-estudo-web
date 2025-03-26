@@ -1,0 +1,1 @@
+console.log("Essa é uma mensagem de log");

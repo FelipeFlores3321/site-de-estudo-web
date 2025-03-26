@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+body {
+margin: 0px;
+padding: 0px;
+list-style: none;
+font-size: 1.2rem;
+font-family: Arial;
+list-style: none;
+
+}
+
+hgroup.textformat h1{
+background-color: rgba(117, 117, 117, 0.356);
+padding: 10px 0px 10px 20px;
+}
+
+hgroup.textformat {
+
+text-align: justify;
+border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+margin: 0px;
+padding: 0px 0px 0px 0px;
+
+}
+
+hgroup.textcenter {
+
+text-align: center;
+border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+margin: 0px;
+padding: 0px;
+margin: 0px;
+
+}
+
+hgroup.textcenter h1{
+margin: 0px;
+font-size: 30px;
+}
+
+article{
+
+  padding: 50px 200px 50px 200px;
+margin: 0px;
+
+}
+
+.hghead{
+
+  
+  background-color: rgb(255, 255, 255);
+  text-align: justify;
+  padding-left: 50px;
+
+}
+
+.menu1 {
+  
+  background-color: rgba(255, 255, 255, 0.938);
+  padding: 0px;
+  
+  }
+
+  ul {
+   
+    border-top: 1px solid gray;
+    padding: 10px 0px 10px 40px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+    justify-content: flex-start;
+
+  }
+
+  a.menucabe{
+    
+    display: block;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+
+  a:hover{
+  background-color: gray;
+  transition: 0.5s;
+  }
+
+.gridcontainer{
+  display: grid;
+grid-template-areas: 
+"cabe cabe"
+"menucabe menucabe"
+"conteudo lateral "
+"rodape rodape";
+
+
+}
+
+.cabecario{
+grid-area: cabe;
+display: flex;
+flex-direction: column;
+background-color: rgba(255, 255, 255, 0.384);
+}
+
+.navmenu{
+z-index: 5;
+grid-area: menucabe;
+border-bottom: 1px solid gray;
+position: sticky;
+top: 0px;
+background-color: white;
+}
+
+.barralateral{
+
+  grid-area: lateral;
+  border-left: 1px solid gray;
+  padding: 100px;
+}
+
+.conteudo{
+
+  grid-area: conteudo;
+
+}
+
+
+
+.rodape{
+  grid-area: rodape;
+
+}
+
+
+
+
+
+/* */
+
+figure{
+  align-items: center;
+}
+
+figure.figsize{
+  
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  background-color: aqua;
+  text-align: center;
+  margin: 20px 100px 20px 100px;
+  box-shadow: 1px 1px 4px;
+  
+}
+
+figure.figsize img{
+
+width: 100%;
+height: 100%;
+
+}
+
+figure.figsize figcaption {
+
+ 
+  opacity: 0;
+  color: white;
+  box-sizing: border-box;
+  text-align: justify;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(128, 128, 128, 0.336);
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+
+}
+
+figure.figsize figcaption:hover{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+
+/* */
